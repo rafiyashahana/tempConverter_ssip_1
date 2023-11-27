@@ -9,35 +9,26 @@
   <body>
     <div class="container">
       <h2>TEMPERATURE CONVERTER</h2>
-      <div class="temp__container">
-        <form class="form__input">
-          <div class="form__group">
-            <input
-              type="number"
-              placeholder="Enter value to convert"
-              name="from"
-            />
-            <select id="fromTemp">
-              <option value="celsius" selected>Degree Celsius</option>
-              <option value="farenheit">Farenheit</option>
-              <option value="kelvin">Kelvin</option>
-            </select>
-          </div>
 
-          <div class="form__group">
-            <input
-              type="number"
-              placeholder="Enter value to convert"
-              name="from"
-            />
-            <select id="fromTemp">
-              <option value="celsius">Degree Celsius</option>
-              <option value="farenheit" selected>Farenheit</option>
-              <option value="kelvin">Kelvin</option>
-            </select>
-          </div>
-        </form>
-      </div>
+      <form class="form__input">
+        <div class="form__group">
+          <input type="number" placeholder="Enter value" name="from" />
+          <select id="fromTemp">
+            <option value="celsius" selected>Degree Celsius</option>
+            <option value="farenheit">Farenheit</option>
+            <option value="kelvin">Kelvin</option>
+          </select>
+        </div>
+
+        <div class="form__group">
+          <input type="number" name="to" />
+          <select id="fromTemp">
+            <option value="celsius">Degree Celsius</option>
+            <option value="farenheit" selected>Farenheit</option>
+            <option value="kelvin">Kelvin</option>
+          </select>
+        </div>
+      </form>
     </div>
     <script src="./index.js"></script>
   </body>
