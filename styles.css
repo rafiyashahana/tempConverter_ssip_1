@@ -19,7 +19,7 @@ body {
 }
 input {
   width: 100%;
-  padding: 1rem 1rem;
+  padding: 1rem;
   border: none;
   margin-bottom: 1rem;
   border: var(--primary-light) 0.1rem solid;
@@ -51,12 +51,32 @@ input {
   gap: 2rem;
 }
 
+.title {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--primary);
+}
+
 .form__input {
   display: flex;
   gap: 3rem;
+  align-items: center;
+}
+
+.equals {
+  font-size: 3.5rem;
+  color: var(--primary);
 }
 
 .form__group {
   display: flex;
   flex-direction: column;
+}
+
+#fromTemp {
+  border: var(--primary-light) 0.1rem solid;
+  padding: 0.3rem;
+  color: var(--primary);
+  cursor: pointer;
 }
