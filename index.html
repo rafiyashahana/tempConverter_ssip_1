@@ -11,7 +11,12 @@
       <h2 class="title">TEMPERATURE CONVERTER</h2>
       <form class="form__input">
         <div class="form__group">
-          <input type="number" placeholder="Enter value" name="from" />
+          <input
+            id="from"
+            type="number"
+            placeholder="Enter value"
+            name="from"
+          />
           <select id="fromTemp">
             <option value="celsius" selected>Degree Celsius</option>
             <option value="farenheit">Farenheit</option>
@@ -20,14 +25,15 @@
         </div>
         <div class="equals">=</div>
         <div class="form__group">
-          <input type="number" name="to" />
-          <select id="fromTemp">
+          <input name="to" disabled />
+          <select id="toTemp">
             <option value="celsius">Degree Celsius</option>
             <option value="farenheit" selected>Farenheit</option>
             <option value="kelvin">Kelvin</option>
           </select>
         </div>
       </form>
+      <button type="submit" class="btn" onclick=>Calculate</button>
     </div>
     <script src="./index.js"></script>
   </body>

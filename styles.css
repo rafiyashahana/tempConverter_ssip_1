@@ -23,6 +23,9 @@ input {
   border: none;
   margin-bottom: 1rem;
   border: var(--primary-light) 0.1rem solid;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--primary);
 }
 
 .container {
@@ -48,7 +51,7 @@ input {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .title {
@@ -74,9 +77,22 @@ input {
   flex-direction: column;
 }
 
-#fromTemp {
+#fromTemp,
+#toTemp {
   border: var(--primary-light) 0.1rem solid;
   padding: 0.3rem;
   color: var(--primary);
   cursor: pointer;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  padding: 1rem 2rem;
+  background-color: var(--primary);
+  color: var(--secondary-light);
+  border-radius: 2rem;
+  font-size: 1rem;
 }
