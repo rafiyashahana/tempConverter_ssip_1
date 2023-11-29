@@ -9,13 +9,26 @@ window.addEventListener("load", () => {
   result.value = "";
 });
 
-btn.addEventListener("click", (e) => {
+inputTemp.addEventListener("input", (e) => {
+  e.preventDefault();
+  calculate();
+});
+
+toTemp.addEventListener("change", (e) => {
+  e.preventDefault();
+  calculate();
+});
+
+fromTemp.addEventListener("change", (e) => {
   e.preventDefault();
   calculate();
 });
 
 const reset = () => {
+  inputTemp.value = "";
   result.value = "";
+  fromTemp.value = "celsius";
+  toTemp.value = "farenheit";
 };
 
 const calculate = () => {

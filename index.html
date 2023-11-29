@@ -21,7 +21,6 @@
         <div class="equals">=</div>
         <div class="form__group">
           <input id="result" name="result" disabled />
-          <!-- <div id="result" name="result">result:</div> -->
           <select id="toTemp">
             <option value="celsius">Degree Celsius</option>
             <option value="farenheit" selected>Farenheit</option>
@@ -29,7 +28,7 @@
           </select>
         </div>
       </form>
-      <button class="btn">Calculate</button>
+      <button class="btn" type="reset" onclick="reset()">Reset</button>
     </div>
     <script src="./index.js"></script>
   </body>
